@@ -1,0 +1,11 @@
+version: '2'
+services:
+    schoolplanning-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/SchoolPlanning/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=SchoolPlanning
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
